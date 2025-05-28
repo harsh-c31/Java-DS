@@ -1,7 +1,4 @@
 package arrays;
-
-
-
 public class majorityelement {
 	static int maj(int[] arr) {
 	int n=arr.length;
@@ -10,19 +7,14 @@ public class majorityelement {
 		for(int j=0;j<n;j++) {
 			if(arr[i]==arr[j]) {
 				count++;
-				
-			}
-			
+				}
 		}
 		if(count>n/2) {
 			return arr[i];
-		
 	}
 		}
 	return-1;
 	}
-	
-
 public static void main(String[]args) {
 	int []arr= {1, 1, 2, 1, 3, 5, 1};
 	System.out.println(maj(arr));
