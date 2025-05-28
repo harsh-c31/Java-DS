@@ -1,9 +1,7 @@
 package Basics;
 
 public class factorialwithoutrec {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+     public static void main(String[] args) {
 int number=5;
 int fact=1;
 for(int i=1;i<=number;i++){
