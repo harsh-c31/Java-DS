@@ -1,30 +1,23 @@
-package arrays;
+package practicearrays;
 
 public class transpose {
+	int a[][]= {{1,2,3},{3,6,4}};
+	
+	int rows=a.length;
+	int cols=a[0].length;
+	int transpose[][]=new int[cols][rows];
+	for(int i=0;i<rows;i++) {
+		for(int j=0;j<cols;j++) {
+			transpose[j][i]=a[i][j];
+		}
+	}
+	System.out.println("transpose matrix");
+	for(int i=0;i<cols;i++) {
+		for(int j=0;j<rows;j++) {
+			System.out.print(transpose[i][j]+" ");
+		}
+		System.out.println();
+	}
+		}
 
-	  static final int M = 3;
-	    static final int N = 3;
-
-	    static void transp(int A[][], int B[][]) {
-	        for (int i = 0; i < A.length; i++) {
-	            for (int j = 0; j < A[0].length; j++) {
-	                B[j][i] = A[i][j];
-	            }
-	        }
-	    }
-
-	    public static void main(String[] args) {
-	        int A[][] = {{2, 3, 4}, {5, 2, 4}, {6, 2, 8}};
-	        int B[][] = new int[N][M];
-
-	        transp(A, B);
-
-	        System.out.println("Resultant Transposed Matrix:");
-	        for (int i = 0; i < N; i++) {
-	            for (int j = 0; j < M; j++) {
-	                System.out.print(B[i][j] + " ");
-	            }
-	            System.out.println();
-	        }
-	    }
 	}
