@@ -10,7 +10,6 @@ public class factusingrecursion {
 	}
 	public static void main(String[] args) {
 		int number=5;
-		
 		int fact=factorial(number);
 		System.out.println(fact);
 	}
