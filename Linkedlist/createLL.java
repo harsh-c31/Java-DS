@@ -62,8 +62,4 @@ public class createLL {
   
     }
 
-	public void deletefirst() {
-		// TODO Auto-generated method stub
-		
-	}
 }
